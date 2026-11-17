@@ -22,9 +22,4 @@ jobs:
       - name: Run tests
         run: python -m unittest discover -v
 
-  staging:
-    needs: build-and-test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to staging
-        run: echo "Application deployed to staging environment"
+ 
